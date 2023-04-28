@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result page</title>
+</head>
+<body>
+    <h4 style="color:rgb(120,120,120)"><b>Result for the Vendor :</b> {{selected_item}}</h4>
+    {%for result in result%}
+    <div>
+        <b>CVE:</b>{{result['CVE']}}
+    </div>
+    <div>
+        <b>Vendor:</b>{{result['Vendor']}}
+    </div>
+    <div>
+        <b>Product:</b>{{result['Product']}}
+    </div>
+    <div>
+        <b>Vulnerability Name:</b>{{result['Vulnerability Name']}}
+    </div>
+    <div>
+        <b>Date Added to Catalog:</b>{{result['Date Added to Catalog']}}
+    </div>
+    <div>
+        <b>Due Date:</b>{{result['Due Date']}}
+    </div>
+    <div>
+        <b>Short Description:</b>{{result['Short Description']}}
+    </div>
+    <div>
+        <b>Action:</b>{{result['Action']}}
+    </div>
+    <a href="{{result['Reference link']}}">Reference link</a>
+    <p>------------------------------------------------------</p>
+    {%endfor%}
+</body>
+</html>
