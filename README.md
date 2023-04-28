@@ -1,2 +1,3 @@
 # amenability-aiding
-This is a common vulnerabilities and exposures (CVE) describing project where we are collecting the data using web craping and storing in a SQL server hosted on AWS
+We are employing web scraping to acquire the data for this project, which describes typical vulnerabilities and exposures (CVEs), and storing it on an AWS-hosted SQL server.
+
